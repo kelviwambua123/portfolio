@@ -1,0 +1,114 @@
+/* Basic resets */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightslategray; /* Light background color */
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+/* Title styles */
+h1, h2, h3 {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+/* Grid container styles */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "navbar"
+        "header"
+        "skills-hobbies"
+        "footer";
+    gap: 20px;
+}
+
+/* Navbar styles */
+#navbarDiv {
+    grid-area: navbar;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#navbarDiv .nav-link {
+    color: #007BFF;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#navbarDiv .nav-link:hover {
+    color: #0056b3;
+}
+
+/* Header styles */
+#headerDiv {
+    grid-area: header;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills and Hobbies Section */
+#skills-hobbies {
+    grid-area: skills-hobbies;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+#footerDiv {
+    grid-area: footer;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Section */
+.container.mt-5 {
+    padding: 20px;
+    background-color: gray;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+                "navbar"
+                "header"
+                "skills-hobbies"
+                "footer";
+    }
+}
+
+@media (min-width: 300px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
